@@ -1,0 +1,42 @@
+{"projects": [{
+  "name": "Alpaca Retirement Farm",
+  "category": "Farm",
+  "description": "Start a five acre retirement farm for Alpacas that are too old for petting Zoos and no longer as cute and cudly",
+  "image": "https://www.openherd.com/userPhotos/Large/2014_635257251816415730.jpg",
+  "author": "Mark Helt and Dan Danylyuck",
+  "currentFunding": 0,
+  "goalFunding": 10000,
+  "goalDate": 1506754800000,
+  "startDate": 1509554280245
+  },{
+  "name": "Vegan Chef Service",
+  "category": "Service",
+  "description": "Deliver pre cooked Vegan meals for people on a weekly basis. We grow many of our vegetables directly in Portland Oregon",
+  "image": "http://lifecdn.dailyburn.com/life/wp-content/uploads/2015/10/Paleo-for-Two-Meal-Prep-1.png",
+  "author": "Mark Helt and Dan Danylyuck",
+  "currentFunding": 0,
+  "goalFunding": 1000,
+  "goalDate": 1505890800000,
+  "startDate": 1509554280245
+  },{
+  "name": "Vegan Chef Service",
+  "category": "Service",
+  "description": "Deliver pre cooked Vegan meals for people on a weekly basis. We grow many of our vegetables directly in Portland Oregon",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg",
+  "author": "Mark Helt and Dan Danylyuck",
+  "currentFunding": 0,
+  "goalFunding": 1000,
+  "goalDate": 1505890800000,
+  "startDate": 1509554280245
+  },{
+  "name": "Vegan Chef Service",
+  "category": "Service",
+  "description": "Deliver pre cooked Vegan meals for people on a weekly basis. We grow many of our vegetables directly in Portland Oregon",
+  "image": "https://i.pinimg.com/736x/f2/b5/43/f2b543e3a03f96489cdd804a59f89b39--child-hood-kids-music.jpg",
+  "author": "Mark Helt and Dan Danylyuck",
+  "currentFunding": 0,
+  "goalFunding": 1000,
+  "goalDate": 1505890800000,
+  "startDate": 1509554280245
+  }]
+}

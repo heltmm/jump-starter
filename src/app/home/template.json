@@ -1,0 +1,22 @@
+{"projects": [{
+  "name": "Alpaca Retirement Farm",
+  "category": "Farm",
+  "description": "Start a five acre retirement farm for Alpacas that are too old for petting Zoos and no longer as cute and cudly",
+  "image": "https://www.openherd.com/userPhotos/Large/2014_635257251816415730.jpg",
+  "author": "Mark Helt and Dan Danylyuck",
+  "currentFunding": 0,
+  "goalFunding": 10000,
+  "goalDate": 1506754800000,
+  "startDate": 1509554280245
+  },{
+  "name": "Vegan Chef Service",
+  "category": "Service",
+  "description": "Deliver pre cooked Vegan meals for people on a weekly basis.",
+  "image": "http://lifecdn.dailyburn.com/life/wp-content/uploads/2015/10/Paleo-for-Two-Meal-Prep-1.png",
+  "author": "Mark Helt and Dan Danylyuck",
+  "currentFunding": 0,
+  "goalFunding": 1000,
+  "goalDate": 1505890800000,
+  "startDate": 1509554280245
+  }]
+}
