@@ -1,0 +1,16 @@
+.progress-bar{
+  height: 1px;
+}
+
+.progress{
+  margin-top: 23px;
+}
+
+img {
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+#money{
+  color: green;
+}

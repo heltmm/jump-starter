@@ -8,11 +8,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { EditProjectComponent } from './edit-project/edit-project.component';
+import { NewProjectComponent } from './new-project/new-project.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +27,9 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    EditProjectComponent,
+    NewProjectComponent
   ],
   imports: [
     BrowserModule,

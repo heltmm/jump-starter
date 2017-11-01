@@ -2,16 +2,16 @@
 <div class="row">
 
   <div *ngFor="let project of projects | async" class="col-md-4">
-    <div class="card">
+    <div class="card" (click)="goToDetailPage(project)">
       <div class="card-body">
         <img src="{{project.image}}" alt="">
         <p>Category: {{project.category}}</p>
         <h4><span class="bold">{{project.name}}: </span>{{ shortDescription(project) }}</h4>
         <h6>by {{project.author}}</h6>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style.width="{{ (project.currentFunding) / (project.goalFunding) * 100}}%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar" role="progressbar" style.width="{{ percent(project) }}" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div><br>
-        <h6>${{project.currentFunding}} pledged</h6>
+        <h6>${{ project.currentFunding }} pledged</h6>
         <h6>{{ (project.currentFunding) / (project.goalFunding) * 100}}% funded</h6>
         <h6>{{ timeLeft(project) }} days left</h6>
       </div>

@@ -35,4 +35,11 @@ export class HomeComponent implements OnInit {
     return short;
   }
 
+  goToDetailPage(project) {
+    this.router.navigate(['project', project.$key]);
+  }
+
+  percent(project) {
+    return (project.currentFunding) / (project.goalFunding) * 100 + "%";
+  }
 }
