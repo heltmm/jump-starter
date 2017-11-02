@@ -1,48 +1,47 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Add New Album to Inventory</h3>
-  </div>
-  <div class="panel-body">
-    <div>
+<div class="row" *ngIf="user">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add a new Jumpstarter Project</h3>
+    </div>
+    <div class="panel-body">
       <div>
-        <label>Project Name:</label>
-        <input #newName>
-      </div>
+        <div>
+          <label>Project Name:</label>
+          <input #newName>
+        </div>
 
-      <div>
-        <label>Category:</label>
-        <input #newCategory>
-      </div>
+        <div>
+          <label>Category:</label>
+          <input #newCategory>
+        </div>
 
-      <div>
-        <label>Description:</label>
-        <input #newDescription class="form-control">
-      </div>
+        <div>
+          <label>Description:</label>
+          <input #newDescription class="form-control">
+        </div>
 
-      <div>
-        <label>Image:</label>
-        <input #newImage>
-      </div>
+        <div>
+          <label>Image:</label>
+          <input #newImage>
+        </div>
 
-      <div>
-        <label>Author:</label>
-        <input #newAuthor>
-      </div>
+        <div>
+          <label>Goal Funding:</label>
+          <input #newGoalFunding>
+        </div>
 
-      <div>
-        <label>Goal Funding:</label>
-        <input #newGoalFunding>
+        <div>
+          <label>Goal Date:</label>
+          <input #newGoalDate>
+        </div>
+        <button (click)="submitForm(newName.value, newCategory.value, newDescription.value, newImage.value, newGoalFunding.value, newGoalDate.value); newName.value=''; newCategory.value=''; newDescription.value=''; newImage.value=''; newGoalFunding.value=''; newGoalDate.value=''">Add</button>
       </div>
-
-      <div>
-        <label>Goal Date:</label>
-        <input #newGoalDate>
-      </div>
-      <button (click)="submitForm(newName.value, newCategory.value, newDescription.value, newImage.value, newAuthor.value, newGoalFunding.value, newGoalDate.value); newName.value=''; newCategory.value=''; newDescription.value=''; newImage.value=''; newAuthor.value=''; newGoalFunding.value=''; newGoalDate.value=''">Add</button>
     </div>
   </div>
 </div>
-
+<div *ngIf="!user">
+  <h1>Please Log In to Add a Project</h1>
+</div>
 <div>
   <app-home></app-home>
 </div>

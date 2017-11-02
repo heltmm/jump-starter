@@ -3,11 +3,12 @@
   "category": "Farm",
   "description": "Start a five acre retirement farm for Alpacas that are too old for petting Zoos and no longer as cute and cudly",
   "image": "https://www.openherd.com/userPhotos/Large/2014_635257251816415730.jpg",
-  "author": "Mark Helt and Dan Danylyuck",
+  "author": "Dan D",
   "currentFunding": 0,
   "goalFunding": 10000,
   "goalDate": 1506754800000,
-  "startDate": 1509554280245
+  "startDate": 1509554280245,
+  "email": "dandanilyuk@gmail.com"
   },{
   "name": "Vegan Chef Service",
   "category": "Service",
@@ -17,7 +18,8 @@
   "currentFunding": 0,
   "goalFunding": 1000,
   "goalDate": 1505890800000,
-  "startDate": 1509554280245
+  "startDate": 1509554280245,
+  "email": "sdadsadsada@gmail.com"
   },{
   "name": "Vegan Chef Service",
   "category": "Service",
@@ -27,7 +29,8 @@
   "currentFunding": 0,
   "goalFunding": 1000,
   "goalDate": 1505890800000,
-  "startDate": 1509554280245
+  "startDate": 1509554280245,
+  "email": "dsadsadsad@gmail.com"
   },{
   "name": "Vegan Chef Service",
   "category": "Service",
@@ -37,6 +40,7 @@
   "currentFunding": 0,
   "goalFunding": 1000,
   "goalDate": 1505890800000,
-  "startDate": 1509554280245
+  "startDate": 1509554280245,
+  "email": "dsadsadsadsa@gmail.com"
   }]
 }

@@ -1,0 +1,47 @@
+<div>
+  <div>
+    <div>
+      <label>Project Name:  </label>
+      <input [(ngModel)]="selectedProject.name">
+    </div>
+
+    <div>
+      <label>Category:</label>
+      <input [(ngModel)]="selectedProject.category">
+    </div>
+
+    <div>
+      <label>Description:</label>
+      <input [(ngModel)]="selectedProject.description">
+    </div>
+
+    <div>
+      <label>Image:</label>
+      <input [(ngModel)]="selectedProject.image">
+    </div>
+
+    <div>
+      <label>Goal Funding:</label>
+      <input [(ngModel)]="selectedProject.goalFunding">
+    </div>
+
+    <div>
+      <label>Goal Date:</label>
+      <input [(ngModel)]="selectedProject.goalDate">
+    </div>
+    <button (click)="beginUpdatingProject(selectedProject)">Update</button>
+  </div>
+</div>
+
+<!-- <h4>Edit Album</h4>
+<label>New Album Title:</label>
+<input [(ngModel)]="selectedAlbum.title">
+<br>
+<label>New Album Artist:</label>
+<input [(ngModel)]="selectedAlbum.artist">
+<br>
+<label>New Album Description:</label>
+<input [(ngModel)]="selectedAlbum.description">
+<button (click)="beginUpdatingAlbum(selectedAlbum)">Update</button>
+<hr>
+<button (click)="beginDeletingAlbum(selectedAlbum)">Delete</button> -->
