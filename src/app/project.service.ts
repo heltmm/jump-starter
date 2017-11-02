@@ -36,5 +36,4 @@ export class ProjectService {
                                   goalFunding: localUpdateProject.goalFunding,
                                   goalDate: localUpdateProject.goalDate});
   }
-
 }

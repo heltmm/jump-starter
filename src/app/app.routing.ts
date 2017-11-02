@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { NewProjectComponent } from './new-project/new-project.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
+import { FilteredComponent } from './filtered/filtered.component';
+import { AuthGuardService } from './auth-guard.service';
 
 
 const appRoutes: Routes = [
@@ -18,11 +20,18 @@ const appRoutes: Routes = [
   },
   {
     path: 'add',
-    component: NewProjectComponent
+    component: NewProjectComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: 'edit/:id',
-    component: EditProjectComponent
+    component: EditProjectComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: 'my-projects',
+    component: FilteredComponent,
+    canActivate: [AuthGuardService]
   }
  ];
 

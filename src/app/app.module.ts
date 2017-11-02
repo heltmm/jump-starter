@@ -9,7 +9,6 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
-import { AuthenticationService } from './authentication.service';
 
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -17,6 +16,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EditProjectComponent } from './edit-project/edit-project.component';
 import { NewProjectComponent } from './new-project/new-project.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AuthGuardService } from './auth-guard.service';
+import { AuthenticationService } from './authentication.service';
+import { FilteredComponent } from './filtered/filtered.component';
+import { UserFilterPipe } from './user-filter.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +34,9 @@ export const firebaseConfig = {
     HomeComponent,
     ProjectDetailsComponent,
     EditProjectComponent,
-    NewProjectComponent
+    NewProjectComponent,
+    FilteredComponent,
+    UserFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthGuardService, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

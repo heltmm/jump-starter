@@ -3,14 +3,16 @@ import { Project } from '../project.model';
 import { Router } from '@angular/router';
 import { ProjectService } from '../project.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { UserFilterPipe} from '../user-filter.pipe'
+import * as firebase from "firebase";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  selector: 'filtered-component',
+  templateUrl: './filtered.component.html',
+  styleUrls: ['./filtered.component.css'],
   providers: [ProjectService]
 })
-export class HomeComponent implements OnInit {
+export class FilteredComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
   private user;
 
@@ -23,6 +25,10 @@ export class HomeComponent implements OnInit {
   timeLeft(project) {
     let diff = Math.floor(((project.startDate - project.goalDate)/1000)/86400)
     return diff;
+  }
+
+  ngDoCheck() {
+    this.user = firebase.auth().currentUser;
   }
 
   shortDescription(project) {

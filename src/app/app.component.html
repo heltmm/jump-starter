@@ -2,17 +2,17 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" routerLink="">Home</a>
+      <span *ngIf="isLoggedIn">
+        <a class="navbar-brand" routerLink="/my-projects">My Projects</a>
+        <a class="navbar-brand" routerLink="/add">Create new Project</a>
+        <a>{{userName}}</a>
+        <a (click)="logout()">Log out</a>
+      </span>
+      <span *ngIf ="!isLoggedIn">
+        <a (click)="login()">Log in</a>
+      </span>
     </div>
   </div>
-  <ul class="nav navbar-nav navbar-right">
-    <li *ngIf="isLoggedIn">
-      <a>{{userName}}</a>
-      <a (click)="logout()">Log out</a>
-    </li>
-    <li *ngIf ="!isLoggedIn">
-      <a (click)="login()">Log in</a>
-    </li>
-  </ul>
 </nav>
 <div class="container">
   <router-outlet></router-outlet>

@@ -9,7 +9,7 @@ import { AuthenticationService } from './authentication.service';
   providers: [AuthenticationService]
 })
 export class AppComponent {
-  user;
+  private user;
   private isLoggedIn: Boolean;
   private userName: String;
 
