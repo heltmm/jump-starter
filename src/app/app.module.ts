@@ -9,12 +9,14 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { AuthenticationService } from './authentication.service';
 
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EditProjectComponent } from './edit-project/edit-project.component';
 import { NewProjectComponent } from './new-project/new-project.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -37,7 +39,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
