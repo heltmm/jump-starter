@@ -17,7 +17,13 @@ export class ProjectService {
   getProjectById(projectId: string) {
     return this.database.object('projects/' + projectId);
   }
+
   addProject(project){
     this.projects.push(project)
+  }
+
+  deleteProject(project){
+    let projectEntryInFirebase = this.getProjectById(project.$key);
+    projectEntryInFirebase.remove();
   }
 }

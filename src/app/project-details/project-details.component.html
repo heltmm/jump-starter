@@ -1,20 +1,20 @@
-<div class="row" *ngIf="projectToDisplay | async">
-  <h1>{{(projectToDisplay | async).name}}</h1>
+<div class="row" *ngIf="projectToDisplay">
+  <h1>{{ projectToDisplay.name }}</h1>
   <div class="col-md-9">
     <br>
-    <img src="{{(projectToDisplay | async).image}}" alt="">
-    <h3>{{(projectToDisplay | async).description}}</h3>
+    <img src="{{(projectToDisplay).image}}" alt="">
+    <h3>{{ projectToDisplay.description }}</h3>
   </div>
   <div class="col-md-3">
     <div class="progress">
-      <div class="progress-bar bg-success" role="progressbar" style.width="{{ percent(projectToDisplay | async) }}" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="progress-bar bg-success" role="progressbar" style.width="{{ percent(projectToDisplay) }}" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
     </div><br>
-    <h3 id="money">${{(projectToDisplay | async).currentFunding}}</h3>
-    <h6>pledged of ${{(projectToDisplay | async).goalFunding}}</h6>
-    <h5>{{ timeLeft(projectToDisplay | async) }} days left</h5>
+    <h3 id="money">${{ projectToDisplay.currentFunding }}</h3>
+    <h6>pledged of ${{ projectToDisplay.goalFunding }}</h6>
+    <h5>{{ timeLeft(projectToDisplay) }} days left</h5>
   </div>
+  <button class="btn btn-danger" (click)="beginDeletingAlbum(projectToDisplay)">Delete</button>
 </div>
-
 <!-- <h2>Welcome to Jump-Starter</h2>
 <div class="row">
 
